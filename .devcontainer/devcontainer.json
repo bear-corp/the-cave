@@ -1,6 +1,6 @@
 {
 	"name": "Dev Container CLI",
-	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/jsburckhardt/devcontainer-features/bat:1": {},
 		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {
