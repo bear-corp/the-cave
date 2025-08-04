@@ -1,0 +1,15 @@
+{
+	"name": "Dev Container CLI",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/jsburckhardt/devcontainer-features/bat:1": {},
+		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {
+			"version": "latest",
+			"nodeVersion": "latest"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        }
+	}
+}
