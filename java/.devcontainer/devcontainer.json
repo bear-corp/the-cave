@@ -1,0 +1,42 @@
+{
+	"name": "Dev Container Java tools",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.m2",
+	"features": {
+		"ghcr.io/jsburckhardt/devcontainer-features/bat:1": {},
+		"ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+    },
+		"ghcr.io/devcontainers/features/java:1": {
+      "installMaven": true,
+			"mavenVersion": "3.9.11",
+      "version": "24.0.2",
+      "jdkDistro": "tem"
+    },
+		"ghcr.io/devcontainers-extra/features/jbang-sdkman:2": {
+			"jdkDistro": "tem",
+			"jdkVersion": "24.0.2-tem"
+		},
+		"ghcr.io/devcontainers-extra/features/quarkus-sdkman:2": {
+			"jdkDistro": "tem",
+			"jdkVersion": "24.0.2-tem"
+		}
+	},
+	"mounts": [
+		{ "source": "maven-repo", "target": "/home/vscode/.m2", "type": "volume" }
+	],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"java.configuration.runtimes": [
+					{
+						"name": "Java24-tem",
+						"path": "/usr/local/sdkman/candidates/java/current/"
+					}
+				]
+			},
+			"extensions": ["jbangdev.jbang-vscode"]
+		}
+	}
+}
