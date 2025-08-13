@@ -8,7 +8,7 @@ devcontainer up --remove-existing-container --workspace-folder .
 
 devcontainer exec --workspace-folder . mvn --version
 
-devcontainer build --workspace-folder . --push true --image-name wilda/java-devcontainer:1.0.0
+devcontainer build --workspace-folder . --push true --image-name wilda/java-devcontainer:1.1.0
 
 docker volume create --name maven-repo
 
