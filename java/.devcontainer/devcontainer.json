@@ -1,7 +1,9 @@
 {
 	"name": "Dev Container Java tools",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.m2",
+	"image": "wilda/common-devcontainer:0.0.1",
+	"postCreateCommand": {
+		"chown": "sudo chown -R vscode:vscode /home/vscode/.m2 /home/vscode/commandhistory"	
+	},
 	"features": {
 		"ghcr.io/jsburckhardt/devcontainer-features/bat:1": {},
 		"ghcr.io/devcontainers/features/git:1": {
@@ -24,8 +26,12 @@
 		}
 	},
 	"mounts": [
-		{ "source": "maven-repo", "target": "/home/vscode/.m2", "type": "volume" }
+		{ "source": "maven-repo", "target": "/home/vscode/.m2", "type": "volume" },
+		{ "source": "zsh-history", "target": "/home/vscode/commandhistory", "type": "volume" }
 	],
+	"remoteEnv": {
+		"HISTFILE": "/home/vscode/commandhistory/.zsh_history"
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {
