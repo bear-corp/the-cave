@@ -1,0 +1,25 @@
+{
+	"name": "Dev Container C<ommons",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"postCreateCommand": {
+		"chown": "sudo chown -R vscode:vscode /home/vscode/commandhistory"	
+	},
+	"features": {
+		"ghcr.io/jsburckhardt/devcontainer-features/bat:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"mounts": [
+		{ "source": "zsh-history", "target": "/home/vscode/commandhistory", "type": "volume" }
+	],
+	"remoteEnv": {
+		"HISTFILE": "/home/vscode/commandhistory/.zsh_history"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": []
+		}
+	}
+}
