@@ -23,9 +23,6 @@
 	"mounts": [
 		{ "source": "maven-repo", "target": "/home/vscode/.m2", "type": "volume" }
 	],
-	"remoteEnv": {
-		"HISTFILE": "/home/vscode/commandhistory/.zsh_history"
-	},
 	"customizations": {
 		"vscode": {
 			"settings": {
