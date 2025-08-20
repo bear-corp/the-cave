@@ -1,17 +1,15 @@
+![Common Dev Container Docker image version](https://img.shields.io/docker/v/wilda/common-devcontainer/0.0.2?sort=date&arch=arm64&style=social&logo=docker&label=common-devcontainer) &nbsp; &nbsp;
+![Java Dev Container Docker image version](https://img.shields.io/docker/v/wilda/java-devcontainer/1.2.0?sort=date&arch=arm64&style=social&logo=docker&label=java-devcontainer)
+
 # the-cave
 Dev containers images to do developent forthe bear corp
 
 # Useful commands
 
-devcontainer up --workspace-folder .
-devcontainer up --remove-existing-container --workspace-folder . 
-
-devcontainer exec --workspace-folder . mvn --version
-
-devcontainer build --workspace-folder . --push true --image-name wilda/java-devcontainer:1.2.0
-
-docker volume create --name maven-repo
-
-devcontainer build --workspace-folder . --push true --image-name wilda/common-devcontainer:0.0.2
-
-
+- test locally the image with build with a given `devcontainer` folder:
+   - `devcontainer up --workspace-folder .` 
+   - `devcontainer up --remove-existing-container --workspace-folder .`
+- execute a cmmand in a running devcontainer container:
+   - `devcontainer exec --workspace-folder . mvn --version`
+- build and push the resulting image from devcontainer configuration:
+   - `devcontainer build --workspace-folder . --push true --image-name wilda/java-devcontainer:1.2.0`
