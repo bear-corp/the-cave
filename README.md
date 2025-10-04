@@ -12,4 +12,4 @@ Dev containers images to do development for the bear corp
 - execute a command in a running devcontainer container:
    - `devcontainer exec --workspace-folder . mvn --version`
 - build and push the resulting image from devcontainer configuration:
-   - `devcontainer build --workspace-folder . --push true --image-name wilda/java-devcontainer:25.0.0`
+   - `devcontainer build --workspace-folder . --push true --image-name wilda/java-devcontainer:25.0.1`
