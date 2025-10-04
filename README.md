@@ -1,5 +1,5 @@
-![Common Dev Container Docker image version](https://img.shields.io/docker/v/wilda/common-devcontainer/0.0.2?sort=date&arch=arm64&style=social&logo=docker&label=common-devcontainer) &nbsp; &nbsp;
-![Java Dev Container Docker image version](https://img.shields.io/docker/v/wilda/java-devcontainer/1.2.0?sort=date&arch=arm64&style=social&logo=docker&label=java-devcontainer)
+![Common Dev Container Docker image version](https://img.shields.io/docker/v/wilda/common-devcontainer?sort=date&arch=arm64&style=social&logo=docker&label=common-devcontainer) &nbsp; &nbsp;
+![Java Dev Container Docker image version](https://img.shields.io/docker/v/wilda/java-devcontainer?sort=date&arch=arm64&style=social&logo=docker&label=java-devcontainer)
 
 # the-cave
 Dev containers images to do development for the bear corp
