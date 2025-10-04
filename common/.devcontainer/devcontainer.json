@@ -1,5 +1,5 @@
 {
-	"name": "Dev Container C<ommons",
+	"name": "Dev Container Commons",
 	"build": {
 		"dockerfile": "../Dockerfile"
 	},

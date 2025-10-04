@@ -8,16 +8,16 @@
 		"ghcr.io/devcontainers/features/java:1": {
       "installMaven": true,
 			"mavenVersion": "3.9.11",
-      "version": "24.0.2",
+      "version": "25",
       "jdkDistro": "tem"
     },
 		"ghcr.io/devcontainers-extra/features/jbang-sdkman:2": {
 			"jdkDistro": "tem",
-			"jdkVersion": "24.0.2-tem"
+			"jdkVersion": "25-tem"
 		},
 		"ghcr.io/devcontainers-extra/features/quarkus-sdkman:2": {
 			"jdkDistro": "tem",
-			"jdkVersion": "24.0.2-tem"
+			"jdkVersion": "25-tem"
 		}
 	},
 	"mounts": [
@@ -28,7 +28,7 @@
 			"settings": {
 				"java.configuration.runtimes": [
 					{
-						"name": "Java24-tem",
+						"name": "Java25-tem",
 						"path": "/usr/local/sdkman/candidates/java/current/"
 					}
 				]
