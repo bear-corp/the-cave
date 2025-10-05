@@ -1,6 +1,6 @@
 {
 	"name": "Dev Container CLI",
-	"image": "wilda/common-devcontainer:0.0.2",
+	"image": "wilda/common-devcontainer:0.1.0",
 	"features": {
 		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {
 			"version": "latest",
