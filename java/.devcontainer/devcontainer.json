@@ -1,6 +1,6 @@
 {
 	"name": "Dev Container Java tools",
-	"image": "wilda/common-devcontainer:0.0.2",
+	"image": "wilda/common-devcontainer:0.1.0",
 	"postCreateCommand": {
 		"chown": "sudo chown -R vscode:vscode /home/vscode/.m2"	
 	},
