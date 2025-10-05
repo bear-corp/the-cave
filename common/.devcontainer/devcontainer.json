@@ -13,9 +13,6 @@
 	"mounts": [
 		{ "source": "zsh-history", "target": "/home/vscode/commandhistory", "type": "volume" }
 	],
-	"remoteEnv": {
-		"HISTFILE": "/home/vscode/commandhistory/.zsh_history"
-	},
 	"customizations": {
 		"vscode": {
 			"settings": {},
