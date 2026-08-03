@@ -1,23 +1,23 @@
 {
 	"name": "Dev Container Java tools",
-	"image": "wilda/common-devcontainer:0.1.0",
+	"image": "wilda/common-devcontainer:0.2.0",
 	"postCreateCommand": {
 		"chown": "sudo chown -R vscode:vscode /home/vscode/.m2"	
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
       "installMaven": true,
-			"mavenVersion": "3.9.11",
-      "version": "25",
+			"mavenVersion": "3.9.16",
+      "version": "26",
       "jdkDistro": "tem"
     },
 		"ghcr.io/devcontainers-extra/features/jbang-sdkman:2": {
 			"jdkDistro": "tem",
-			"jdkVersion": "25-tem"
+			"jdkVersion": "26-tem"
 		},
 		"ghcr.io/devcontainers-extra/features/quarkus-sdkman:2": {
 			"jdkDistro": "tem",
-			"jdkVersion": "25-tem"
+			"jdkVersion": "26-tem"
 		}
 	},
 	"mounts": [
@@ -28,7 +28,7 @@
 			"settings": {
 				"java.configuration.runtimes": [
 					{
-						"name": "JavaSE-25",
+						"name": "JavaSE-26",
 						"path": "/usr/local/sdkman/candidates/java/current/"
 					}
 				]
