@@ -16,6 +16,7 @@
 			"jdkVersion": "26-tem"
 		},
 		"ghcr.io/devcontainers-extra/features/quarkus-sdkman:2": {
+			"version": "3.38.0",
 			"jdkDistro": "tem",
 			"jdkVersion": "26-tem"
 		}
@@ -23,6 +24,9 @@
 	"mounts": [
 		{ "source": "maven-repo", "target": "/home/vscode/.m2", "type": "volume" }
 	],
+	"remoteEnv": {
+  	"PATH": "${containerEnv:PATH}:/usr/local/sdkman/candidates/quarkus/current/bin"
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {
